@@ -1,0 +1,81 @@
+.tape {
+  height: 5vh;
+  background-color: #45aaf2;
+}
+
+header {
+  height: 30vh;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+}
+
+header .header__col .icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #45aaf2;
+  text-align: center;
+  line-height: 1.9;
+  color: white;
+  opacity: 0.8;
+}
+
+header .header__col:first-child {
+  justify-self: center;
+  align-self: center;
+}
+
+header .header__col:first-child .name-wrapper {
+  display: flex;
+}
+
+header .header__col:first-child .name {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2;
+}
+
+header .header__col:first-child .slash {
+  display: block;
+  margin: 0 10px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.8;
+  opacity: 0.2;
+}
+
+header .header__col:first-child .job {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 17px;
+  opacity: 0.7;
+}
+
+header .header__col:nth-child(2) {
+  justify-self: center;
+  align-self: center;
+}
+
+header .header__col:nth-child(2) .profile {
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/pic.jpg");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.25),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+header .header__col:last-child {
+  justify-self: center;
+  align-self: center;
+}
+
+header .header__col:last-child ul li {
+  margin-bottom: 10px;
+}

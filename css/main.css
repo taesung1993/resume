@@ -1,0 +1,43 @@
+main {
+  min-height: 50vh;
+  padding: 0 60px;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main ul li:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main ul li .icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #45aaf2;
+  text-align: center;
+  line-height: 1.9;
+  color: white;
+  opacity: 0.8;
+}
+
+main .intro {
+  padding: 20px 0;
+}
+
+main .intro .intro__title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
