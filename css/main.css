@@ -7,7 +7,6 @@ main .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 main .contact li {
@@ -41,14 +40,15 @@ main .contact li .icon {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 5px;
 }
 
 .intro .content {
-  display: unset;
   font-size: 14px;
   line-height: 1.2;
-  margin-bottom: 20px;
   list-style: disc outside none;
+  padding-bottom: 30px;
 }
 
 .intro .content li {
@@ -58,4 +58,118 @@ main .contact li .icon {
 
 .intro .content li:last-child {
   margin-bottom: 20px;
+}
+
+.intro .projects {
+  min-height: 200px;
+}
+
+.intro .projects .project {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.intro .projects .project:last-child {
+  margin-bottom: 0;
+}
+
+.intro .projects .project a {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+
+.intro .projects .project a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.intro .projects .project .project__col:first-child .wetube-logo {
+  margin: 0 auto;
+  width: 50%;
+  height: 80px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2.5;
+  box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.25),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.intro .projects .project .project__col:last-child .project__title {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.intro .projects .project .project__col:last-child .project__contents {
+  font-size: 13px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.intro .projects .project .project__col:last-child .project__contents h6 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.intro .projects .project .project__col:last-child .project__contents ul {
+  list-style: disc outside none;
+}
+
+.intro .projects .project .project__col:last-child .project__contents ul li {
+  margin-left: 20px;
+}
+
+.intro .projects .project .project__col:last-child .skills {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.intro .projects .project .project__col:last-child .skill {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.25),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  text-align: center;
+}
+
+.intro .projects .project .project__col:last-child .skill img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.intro .projects .project .project__col:last-child span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#yunflix {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: red;
+  text-shadow: 1px 2px 3px rgba(178, 190, 195, 0.7), 0px 1px 4px #fff;
+}
+
+#yunflix .yunflix__left {
+  transform: translateY(5px) skew(0deg, -2deg);
+}
+
+#yunflix .yunflix__right {
+  transform: translateY(5px) skew(0deg, 2deg);
 }
