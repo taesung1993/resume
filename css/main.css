@@ -62,12 +62,12 @@ main .contact li .icon {
 
 .intro .projects {
   min-height: 200px;
+  margin-bottom: 30px;
 }
 
 .intro .projects .project {
   width: 100%;
   height: 100%;
-  padding-bottom: 30px;
   margin-bottom: 50px;
 }
 
@@ -79,6 +79,7 @@ main .contact li .icon {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
+  padding: 20px 0;
 }
 
 .intro .projects .project a:hover {
