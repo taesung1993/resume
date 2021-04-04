@@ -147,6 +147,10 @@ main .contact li .icon {
   text-align: center;
 }
 
+.skill:last-child{
+  margin-right: 0;
+}
+
 .skill img {
   width: 30px;
   height: 30px;
