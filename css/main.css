@@ -126,15 +126,15 @@ main .contact li .icon {
   margin-left: 20px;
 }
 
-.intro .projects .project .project__col:last-child .skills {
+.skills {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 
-.intro .projects .project .project__col:last-child .skill {
-  width: 70px;
-  height: 70px;
+.skill {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
@@ -147,10 +147,24 @@ main .contact li .icon {
   text-align: center;
 }
 
-.intro .projects .project .project__col:last-child .skill img {
+.skill img {
   width: 30px;
   height: 30px;
   margin-bottom: 5px;
+}
+
+.skill span{
+  font-size: 1.2rem;
+}
+
+.skill .skill__name{
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.skill .skill__level{
+  font-size: 1rem;
+  opacity: 0.7;
 }
 
 .intro .projects .project .project__col:last-child span {
