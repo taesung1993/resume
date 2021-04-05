@@ -10,6 +10,11 @@ header {
   grid-template-columns: 40% 20% 40%;
 }
 
+header .header__col li{
+  display: flex;
+  align-items: center;
+}
+
 header .header__col .icon {
   display: inline-block;
   width: 30px;
@@ -17,9 +22,16 @@ header .header__col .icon {
   border-radius: 50%;
   background-color: #45aaf2;
   text-align: center;
-  line-height: 1.9;
   color: white;
-  opacity: 0.8;
+  position: relative;
+  margin-right: 10px;
+}
+
+header .header__col .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 header .header__col:first-child {

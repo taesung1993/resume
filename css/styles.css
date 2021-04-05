@@ -11,7 +11,14 @@ html{
 }
 
 body {
-  width: 100vw;
+  min-width: 800px;
+}
+
+h3{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .main {

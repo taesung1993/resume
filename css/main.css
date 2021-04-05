@@ -19,16 +19,32 @@ main .contact li:first-child {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+main .contact li a{
+  display: block;
+  display: flex;
+  align-items: center
+}
+
 main .contact li .icon {
   display: inline-block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #45aaf2;
-  text-align: center;
-  line-height: 1.9;
   color: white;
-  opacity: 0.8;
+  position: relative;
+  margin-right: 15px;
+}
+
+main .contact li .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .contact li span:last-child{
+  font-size: 1.3rem;
 }
 
 .intro {
@@ -48,12 +64,13 @@ main .contact li .icon {
   font-size: 14px;
   line-height: 1.2;
   list-style: disc outside none;
-  padding-bottom: 30px;
+  padding: 20px;
 }
 
 .intro .content li {
   margin-bottom: 10px;
   margin-left: 20px;
+  font-size: 1.6rem;
 }
 
 .intro .content li:last-child {
@@ -103,8 +120,9 @@ main .contact li .icon {
 
 .intro .projects .project .project__col:last-child .project__title {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 2px;
+  text-align: left;
 }
 
 .intro .projects .project .project__col:last-child .project__contents {
@@ -126,6 +144,10 @@ main .contact li .icon {
   margin-left: 20px;
 }
 
+.my_skill_stack__row{
+  margin-top: 50px;
+}
+
 .skills {
   display: flex;
   justify-content: center;
@@ -145,6 +167,11 @@ main .contact li .icon {
     0 8px 10px -5px rgba(0, 0, 0, 0.2);
   margin-right: 10px;
   text-align: center;
+}
+
+.project .skill{
+  width: 80px;
+  height: 80px;
 }
 
 .skill:last-child{
